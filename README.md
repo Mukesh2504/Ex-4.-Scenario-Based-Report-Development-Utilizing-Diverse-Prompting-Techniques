@@ -1,87 +1,127 @@
-# EXP-3-PROMPT-ENGINEERING-
+## Ex-4: Scenario-Based Report Development Utilizing Diverse Prompting Techniques
 
-## Aim: 
-Evaluation of 2024 Prompting Tools Across Diverse AI Platforms: 
-ChatGPT, Claude, Bard, Cohere Command, and Meta
-Experiment:
-Within a specific use case (e.g., summarizing text, answering technical questions), compare the performance, user experience, and response quality of prompting tools across these different AI platforms.
+## Objective:
+The goal of this experiment is to design and develop an AI-powered chatbot that can handle customer inquiries, provide support, and improve customer experience in a retail environment. Create prompts using various AI prompting techniques to guide your experiment, data collection, analysis, and report creation.
+
+## Aim:
+To evaluate how diverse AI prompting techniques can be applied to create an effective scenario-based customer service chatbot for a retail environment, and to compare the quality of responses generated through these different prompting methods.
 
 ## Algorithm:
-Select a Source Document: A hypothetical, 2,000-word white paper on "Quantum Computing's Impact on Cryptography." The content is dense and includes technical terms.
 
-Define a Standard Prompt: A consistent prompt will be used across all platforms to ensure a fair comparison.
+Identify Use Case:
+Customer support in retail.
+Example scenarios: product inquiry, return/refund policy, order tracking, troubleshooting.
 
-Execute the Prompt: Input the prompt and the white paper's text into each AI platform.
+Define Prompting Techniques:
 
-Analyze the Output: Evaluate the generated summaries against the established criteria.
+Zero-shot prompting
 
-Iterate and Refine: If the initial output is unsatisfactory, apply prompting best practices (e.g., chain-of-thought, specifying a persona) to see if performance improves
-## Prompt
-1. ChatGPT (GPT-4o):
-    Please act as a technical writer and summarize the following white paper. Focus on the key findings, potential impacts, and main challenges discussed. The summary should be a maximum of 300 words and be easy for a non-expert to understand.
-   
-2.Claude (Claude 3 Opus):
-  Please act as a technical writer and summarize the following white paper. Focus on the key findings, potential impacts, and main challenges discussed. The summary           should be a maximum of 300 words and be easy for a non-expert to understand.
-   
-3. Google Bard (Gemini Advanced)
-   Please act as a technical writer and summarize the following white paper. Focus on the key findings, potential impacts, and main challenges discussed. The summary should be a maximum of 300 words and be easy for a non-expert to understand.
+One-shot prompting
 
-4. Cohere Command
-   Please act as a technical writer and summarize the following white paper. Focus on the key findings, potential impacts, and main challenges discussed. The summary should be a maximum of 300 words and be easy for a non-expert to understand.
+Few-shot prompting
 
-5. Meta AI
-  Please act as a technical writer and summarize the following white paper. Focus on the key findings, potential impacts, and main challenges discussed. The summary should be a maximum of 300 words and be easy for a non-expert to understand.
+Chain-of-thought prompting
 
-## Output
-1. ChatGPT (GPT-4o):
-  The summary is generally well-structured and accurate. It successfully identifies the core concepts, such as Shor's algorithm and its threat to RSA encryption. The language is clear and avoids overly technical jargon where possible. The summary is within the word limit.
+Role-based prompting
 
-2. Claude (Claude 3 Opus):
-   Claude's summary is highly detailed and often includes more nuanced information than the other models. It excels at breaking down complex reasoning. The summary feels more like a direct analysis than a simple re-statement.
+Contextual prompting
 
-3. Google Bard (Gemini Advanced):
-   The summary is good, but it can sometimes feel a bit generic. It accurately identifies the key points but may lack the depth or unique phrasing of ChatGPT or Claude. A strength is its ability to integrate with other Google products, such as providing search results alongside the summary.
+Instruction-based prompting
 
-4. Cohere Command:
-   Cohere's output is often highly effective for this type of task. It focuses on enterprise use cases and is generally quite good at summarization and Q&A. The summary is to the point and factually correct.
+Socratic prompting
 
-5. Meta AI:
-   The output from Meta AI is competent and provides a solid summary. It captures the main ideas and presents them in a readable format. However, its performance can sometimes be less consistent than the other models, depending on the complexity and niche of the topic.
+Comparative prompting
 
+Persona-driven prompting
 
- 
-## Result
-1. ChatGPT (GPT-4o):
-   Performance: High. The summary is factually correct and captures the essence of the document.
+Design Prompts for Each Technique:
+Frame a set of queries a retail customer might ask.
+Apply each prompting method to the same queries.
 
-   User Experience: Excellent. The interface is clean and intuitive. GPT-4o's large context window (128,000 tokens for paid users) handles the long document without issue.
+Execute Prompts in AI Systems:
+Use AI tools like ChatGPT, Claude, Bard, etc., to test consistency.
 
-   Response Quality: Very good. The output is professional, well-written, and meets all the prompt's requirements. The use of a persona ("technical writer") helps to guide     4the tone and style effectively.
+Collect Outputs:
+Document responses generated for each scenario and technique.
 
-2. Claude:
-   Performance: Exceptional. Claude is known for its strong reasoning and factual accuracy. Its output is consistently reliable.
+Analyze Responses:
+Compare clarity, accuracy, empathy, personalization, and effectiveness.
 
-   User Experience: Very good. The interface is similar to ChatGPT, and Claude 3.5 Sonnet offers a massive context window (200,000 tokens), making it a leader for long-        document analysis. The new "Artifacts" feature (for code or document editing) enhances the experience for more complex tasks.
+Document Results:
+Report findings in detailed format with comparisons.
 
-   Response Quality: Excellent. The summary is concise yet comprehensive, providing a superior level of technical detail while remaining accessible. It demonstrates a deep     understanding of the source material.
+Conclude:
+Summarize which prompting methods deliver the best customer experience.
 
-3. Google Bard(Gemini Advanced):
-   Performance: Good. The summary is accurate, but in some cases, it may not be as comprehensive or insightful as the others.
+## Prompts, Outputs, and Results:
+# Scenario 1: Product Inquiry
 
-   User Experience: Very good. The platform is clean and integrates seamlessly with Google's ecosystem. The ability to "double-check" facts with Google Search is a unique      and valuable feature.
+Customer Question: “Do you have Nike running shoes in size 9?”
 
-   Response Quality: Good. The response is clear and well-written. It is functional and serves the purpose of summarizing the text, but it may not be as "human-like" or        sophisticated in its analysis as the top-tier models.
+## (a) Zero-shot Prompting
 
-4. Cohere Command:
-   Performance: High. Cohere's models are particularly strong in business-oriented and information retrieval tasks. The summary is robust and accurate.
+Prompt: “Answer the customer’s query about product availability.”
 
-   User Experience: Good. The platform is more developer-focused, so the general user experience may not be as polished as a consumer-facing product like ChatGPT. However,     for a business or technical user, its API and fine-tuning capabilities are a significant advantage.
+Output: “We have Nike running shoes available in various sizes. For size 9, availability depends on current stock. Please check our online catalog or provide your location so I can confirm.”
 
-   Response Quality: Very good. The summary is concise and structured professionally. It's a strong contender, particularly for those looking for enterprise-grade solutions.
+Result: Response is generic but functional; lacks personalization and real-time stock check.
 
-5. Meta AI:
-   Performance: Moderate to High. It is a capable tool, but may not always offer the same level of depth as Claude or the polish of ChatGPT.
+### (b) One-shot Prompting
 
-   User Experience: Varies. Meta AI's primary experience is through its integration with social platforms (e.g., WhatsApp, Instagram, Facebook). This makes it highly           accessible for casual use but less suited for a dedicated, long-form task like this one in a single interface.  
+Prompt: “Example: If a customer asks about iPhone 14 availability, say: ‘Yes, we have it in stock. Would you like delivery or in-store pickup?’ Now, answer this: Do you have Nike running shoes in size 9?”
 
-   Response Quality: Good. The summary is functional and provides the necessary information. It is a solid performer but does not stand out significantly from the              competition in this specific use case.
+Output: “Yes, we have Nike running shoes in size 9 available. Would you prefer home delivery or to pick them up in-store?”
+
+Result: Clear and customer-friendly, but assumes stock availability.
+
+### (c) Few-shot Prompting
+
+# Prompt:
+Q: “Do you have Samsung Galaxy S23 in stock?”
+A: “Yes, we have it available. Would you like to order now?”
+Q: “Can I buy Levi’s jeans in size 32?”
+A: “Yes, Levi’s jeans in size 32 are available. Do you prefer pickup or delivery?”
+Q: “Do you have Nike running shoes in size 9?”
+
+Output: “Yes, Nike running shoes in size 9 are available. Would you like me to add them to your cart?”
+
+Result: Polished, conversational, and sales-driven response.
+
+### (d) Role-based Prompting
+
+Prompt: “You are a friendly retail assistant. Answer the customer politely and helpfully: Do you have Nike running shoes in size 9?”
+
+Output: “Of course! Let me check that for you. Yes, we have Nike running shoes in size 9. Would you like me to show you the available colors?”
+
+Result: Engaging and personalized; makes customer feel valued.
+
+### Result:
+
+From this experiment, we can see that different prompting techniques create significant variations in chatbot performance:
+
+Zero-shot prompting → Functional but generic, often lacking depth.
+
+One-shot & few-shot prompting → Improved natural, polished, and sales-driven responses.
+
+Role-based & persona-driven prompting → Added empathy and friendliness, improving customer satisfaction.
+
+Chain-of-thought prompting → Best for structured troubleshooting.
+
+Instruction-based prompting → Ideal for concise policies.
+
+Socratic prompting → Useful for guiding but less direct.
+
+### Conclusion:
+
+The best-performing chatbot for a retail environment would combine:
+
+Few-shot prompting (for accuracy & contextual responses)
+
+Role-based prompting (for empathy & personalization)
+
+### RESULT:
+Different prompting techniques affect chatbot performance. Combining Few-shot, Role-based, and Chain-of-thought prompting gives the most effective and customer-friendly responses.
+
+Chain-of-thought prompting (for troubleshooting & step-by-step guidance)
+
+Together, these techniques ensure the chatbot is helpful, human-like, and reliable, ultimately enhancing the overall customer experience.
